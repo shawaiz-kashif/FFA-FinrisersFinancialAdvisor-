@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export',      // This creates an 'out' folder with static HTML/CSS/JS
   images: {
-    unoptimized: true,
+    unoptimized: true,   // Required because GitHub Pages doesn't support Next.js image optimization
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
