@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',      // This creates an 'out' folder with static HTML/CSS/JS
+  output: 'export',      // Forces Next.js to build static HTML files
   images: {
-    unoptimized: true,   // Required because GitHub Pages doesn't support Next.js image optimization
+    unoptimized: true,   // GitHub Pages doesn't support the image optimizer
   },
+  // Replace 'FinrisersFinancialAdvisor' with your exact repository name
+  basePath: '/FinrisersFinancialAdvisor', 
 };
 
 export default nextConfig;
